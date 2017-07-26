@@ -1,0 +1,23 @@
+{
+  "name": "cloudconvertfunction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielMeixner/CloudConvertFunction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielMeixner/CloudConvertFunction/issues"
+  },
+  "homepage": "https://github.com/DanielMeixner/CloudConvertFunction#readme",
+  "dependencies": {
+    "cloudconvert": "^1.1.2",
+    "request": "^2.81.0"
+  }
+}
