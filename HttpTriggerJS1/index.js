@@ -4,7 +4,7 @@ module.exports = function (context, req) {
     if (req.query.name || (req.body && req.body.name)) {
         context.res = {
             // status: 200, /* Defaults to 200 */
-            body: "Hello " + (req.query.name || req.body.name)
+            body: "Hello " + (req.query.filename || req.body.filename)
         };
     }
     else {
@@ -13,5 +13,9 @@ module.exports = function (context, req) {
             body: "Please pass a name on the query string or in the request body"
         };
     }
+
+    var converter = require('./convertstart.js');
+    converter.myConvertStart(filename);
+
     context.done();
 };
